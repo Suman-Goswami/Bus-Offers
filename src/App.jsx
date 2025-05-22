@@ -114,25 +114,23 @@ const CreditCardDropdown = () => {
       {errorMessage && <p style={{ color: "red", fontWeight: "bold", marginTop: "10px" }}>{errorMessage}</p>}
 
       {/* Display Selected Card Details */}
-      {selectedCard && (
-  <div className="mt-8 p-4 border rounded shadow-md">
+{selectedCard && (
+  <div className="mt-8 p-4 border rounded shadow-md" style={{ color: "black" }}>
     <h3 className="text-lg font-semibold">{selectedCard["Applicable cards"]}</h3>
     <p><strong>Website:</strong> {selectedCard["Website"]}</p>
     <p><strong>Offer:</strong> {selectedCard["Offers"]}</p>
     <a
-  href={selectedCard["Offer link"]}
-  target="_blank"
-  rel="noopener noreferrer"
->
-<button className="btn">
-  View Offer
-</button>
-
-</a>
-
-
+      href={selectedCard["Offer link"]}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="btn">
+        View Offer
+      </button>
+    </a>
   </div>
 )}
+
 
     </div>
   );
