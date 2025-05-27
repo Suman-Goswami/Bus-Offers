@@ -115,7 +115,7 @@ const CreditCardDropdown = () => {
 
       {/* Display Selected Card Details */}
 {selectedCard && (
-  <div className="mt-8 p-4 border rounded shadow-md" style={{ color: "black" }}>
+  <div className="mt-8 p-4 border rounded shadow-md" style={{ color: "white" ,  backgroundColor: "#39641D", marginTop:"20px", padding:"20px", borderRadius:"5px"}}>
     <h3 className="text-lg font-semibold">{selectedCard["Applicable cards"]}</h3>
     <p><strong>Website:</strong> {selectedCard["Website"]}</p>
     <p><strong>Offer:</strong> {selectedCard["Offers"]}</p>
@@ -124,7 +124,7 @@ const CreditCardDropdown = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <button className="btn">
+      <button className="btn" style={{backgroundColor:"blue"}}>
         View Offer
       </button>
     </a>
