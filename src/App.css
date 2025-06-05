@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #F6F4E9; 
+  background: linear-gradient(to bottom, #999792, #cecdc9);
   margin: 0;
   padding: 0;
   display: flex;
@@ -159,7 +159,7 @@ ul li:hover {
 .btn {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #39641D;
+  background-color: #1e7145;
   border: none;
   border-radius: 5px;
   cursor: pointer;
